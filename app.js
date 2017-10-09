@@ -9,6 +9,10 @@ app.use(express.static('assets'));
 
 app.set('view engine','ejs');
 
+app.get('/ronaldinho', (req, res) => {
+    res.render('OI MUNDO');
+}
+
 app.get('/', (req, res)=>{
 
     mongoClient.connect('mongodb://dbdogs:w-h5U#Qz4{n@tatooine.mongodb.umbler.com:48145/dbdogs', (err, db)=>{
